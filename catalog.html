@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <title>Нёрдс - дизайн студия полного цикла</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+      <div class="container">
+        <nav class="clearfix">
+          <div class="main-menu-logo">
+            <img src="img/top-menu-logo.png" alt="" />
+          </div>
+          <ul class="main-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="index-cart">
+            <a class="link-cart" href="#">Корзина</a>
+          </div>
+        </nav>
+      <h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+    </header>
+    <main class="container clearfix">
+      <aside class="catalog-sidebar">
+        <h2 class="title-catalog-sidebar">Стоимость</h2>
+        <form action="form.php" method="GET">
+          <div class="filter-sidebar">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 10%; width: 70%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-sidebar">
+            <h2 class="title-catalog-sidebar">Сетка:</h2>
+            <input id="grid-adaptive" type="radio" name="radio-grid" value="">
+            <label for="grid-adaptive">Адаптивная</label>
+            <input id="grid-fixed" type="radio" name="radio-grid" value="">
+            <label for="grid-fixed">Фиксированная</label>
+            <input id="grid-elastic" type="radio" name="radio-grid" value="">
+            <label for="grid-elastic">Резиновая</label>
+          </div>
+          <div class="filter-sidebar">
+            <h2 class="title-catalog-sidebar">Особенности:</h2>
+            <input id="features-slider" type="checkbox" name="checkbox-features-slider" value="">
+            <label for="features-slider">Слайдер</label>
+            <input id="features-feature-block" type="checkbox" name="checkbox-features-feature-block" value="">
+            <label for="features-feature-block">Блок преимуществ</label>
+            <input id="features-news" type="checkbox" name="checkbox-features-news" value="" checked>
+            <label for="features-new">Новости</label>
+            <input id="features-gallery" type="checkbox" name="checkbox-features-galery" value="">
+            <label for="features-gallery">Галерея</label>
+            <input id="features-cart" type="checkbox" name="checkbox-features-cart" value="">
+            <label for="features-cart">Корзина</label>
+          </div>
+          <input type="submit" name="name" value="Показать">
+        </form>
+      </aside>
+      <section class="catalog">
+        <div class="filter-items">
+          <ul class="list list-filter-items">
+            <li>Сортировать:</li>
+            <li>
+              <a class="link link-filter" href="#">По цене</a>
+            </li>
+            <li>
+              <a class="link link-filter" href="#">По типу</a>
+            </li>
+            <li>
+              <a class="link link-filter" href="#">По функционалу</a>
+            </li>
+          </ul>
+          <div class="arrows">
+            <a href="#"><span>1</span>1</a>
+            <a href="#"><span>2</span>2</a>
+          </div>
+        </div>
+        <div class="catalog-items">
+          <article class="catalog-item">
+            <div class="catalog-item-browser">
+            </div>
+            <div class="catalog-item-img">
+              <img src="http://placehold.it/240x240" alt="" />
+            </div>
+            <div class="catalog-item-description">
+              <h3 class="catalog-item-title">Aviator</h3>
+              <p>
+                Одностраничный макет с авторским дизайном
+              </p>
+              <a class="btn btn-price" href="#">8000 р.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-browser">
+            </div>
+            <div class="catalog-item-img">
+              <img src="http://placehold.it/240x240" alt="" />
+            </div>
+            <div class="catalog-item-description">
+              <h3 class="catalog-item-title">Sunset</h3>
+              <p>
+                Интернет магазин с личным кабинетом
+              </p>
+              <a class="btn btn-price" href="#">10000 р.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-browser">
+            </div>
+            <div class="catalog-item-img">
+              <img src="http://placehold.it/240x240" alt="" />
+            </div>
+            <div class="catalog-item-description">
+              <h3 class="catalog-item-title">Forte</h3>
+              <p>
+                Отличный макет для личного блога
+              </p>
+              <a class="btn btn-price" href="#">5000 р.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-browser">
+            </div>
+            <div class="catalog-item-img">
+              <img src="http://placehold.it/240x240" alt="" />
+            </div>
+            <div class="catalog-item-description">
+              <h3 class="catalog-item-title">Modern Organic Thai</h3>
+              <p>
+                Сайт для ресторана быстрого питания
+              </p>
+              <a class="btn btn-price" href="#">12000 р.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-browser">
+            </div>
+            <div class="catalog-item-img">
+              <img src="http://placehold.it/240x240" alt="" />
+            </div>
+            <div class="catalog-item-description">
+              <h3 class="catalog-item-title">Avenue</h3>
+              <p>
+                Макет для блога о путешествиях
+              </p>
+              <a class="btn btn-price" href="#">8000 р.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item-browser">
+            </div>
+            <div class="catalog-item-img">
+              <img src="http://placehold.it/240x240" alt="" />
+            </div>
+            <div class="catalog-item-description">
+              <h3 class="catalog-item-title">Dovetail</h3>
+              <p>
+                Интернет магазин с галереей товаров
+              </p>
+              <a class="btn btn-price" href="#">14000 р.</a>
+            </div>
+          </article>
+        </div>
+        <div class="page-navigation">
+          <ul class="list list-page-navigation">
+            <li><a class="link link-navigation" href="#">1</a></li>
+            <li><a class="link link-navigation" href="#">2</a></li>
+            <li><a class="link link-navigation" href="#">3</a></li>
+            <li><a class="link link-navigation link-navigation-last" href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="index-footer">
+      <div class="index-footer-map">
+
+      </div>
+      <div class="index-footer-social container">
+        <div class="social">
+          <a class="btn-social" href="#">VKontakte <span class="icon-vk"></span></a>
+          <a class="btn-social" href="#">Facebook <span class="icon-facebook"></span></a>
+          <a class="btn-social" href="#">Instagram <span class="icon-instagramm"></span></a>
+        </div>
+        <div class="friendship">
+          <b class="title-footer-friendship">Давайте дружить, это выгодно!</b>
+          <p class="description-footer-friendship">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
