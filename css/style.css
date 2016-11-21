@@ -140,12 +140,12 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 85px;
   left: 50%;
   z-index: 10;
 
   width: 200px;
-  margin-left: -100px;
+  margin-left: -110px;
 
   text-align: center;
 }
@@ -166,15 +166,18 @@ body {
 
 .slide-text {
   width: 500px;
-  padding: 30px 0;
+  padding: 28px 0;
 }
 
 .slide-title {
   font-weight: 500;
   font-size: 36px;
+  line-height: 36px;
 }
 
 .slide p {
+  margin: 20px 0 0 0;
+
   font-weight: 500;
   line-height: 22px;
   color: #283136;
@@ -183,7 +186,7 @@ body {
 .slide .btn-slider {
   display: block;
   width: 220px;
-  margin-top: 25px;
+  margin-top: 28px;
   padding: 12px 10px;
 
   font-weight: 300;
@@ -286,11 +289,10 @@ body {
 
 .btn {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 38px;
   display: block;
   width: 140px;
-  height: 33px;
-  padding-top: 14px;
+  height: 38px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -499,7 +501,49 @@ body {
   margin-top: 85px;
   width: 100%;
   height: 420px;
-  background: grey;
+  background-image: url("../img/index-footer-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+}
+
+.index-footer-map__contacts {
+  position: absolute;
+  top: 88px;
+  left: 510px;
+  width: 230px;
+  height: 210px;
+  background-color: #ffffff;
+  padding: 25px 0 0 20px;
+}
+
+.index-footer-map__contacts-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.index-footer-map__contacts-where {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.index-footer-map__contacts-number {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.btn-footer-contacts {
+  width: 204px;
+  margin-top: 31px;
+  margin-left: 4px;
 }
 
 .index-footer-social {
@@ -796,6 +840,7 @@ input[type='radio']:checked + label::before {
   font-size: 16px;
   display: inline-block;
   width: 50%;
+  text-transform: uppercase;
 }
 
 .max-price {
@@ -806,7 +851,7 @@ input[type='radio']:checked + label::before {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   width: 60px;
-  margin-left: 10px;
+  margin-left: 5px;
   padding: 8px 10px;
   text-align: center;
   color: #283136;
