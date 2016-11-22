@@ -48,21 +48,21 @@
           </div>
           <div class="filter-sidebar">
             <h2 class="title-catalog-sidebar">Сетка:</h2>
-            <input id="grid-adaptive" type="radio" name="radio-grid" value="">
+            <input id="grid-adaptive" type="radio" name="radio-grid" checked>
             <label for="grid-adaptive">Адаптивная</label>
-            <input id="grid-fixed" type="radio" name="radio-grid" value="">
+            <input id="grid-fixed" type="radio" name="radio-grid">
             <label for="grid-fixed">Фиксированная</label>
-            <input id="grid-elastic" type="radio" name="radio-grid" value="">
+            <input id="grid-elastic" type="radio" name="radio-grid">
             <label for="grid-elastic">Резиновая</label>
           </div>
           <div class="filter-sidebar">
             <h2 class="title-catalog-sidebar">Особенности:</h2>
-            <input id="features-slider" type="checkbox" name="checkbox-features-slider">
+            <input id="features-slider" type="checkbox" name="checkbox-features-slider" checked>
             <label for="features-slider">Слайдер</label>
             <input id="features-feature-block" type="checkbox" name="checkbox-features-feature-block">
             <label for="features-feature-block">Блок преимуществ</label>
             <input id="features-news" type="checkbox" name="checkbox-features-news" checked>
-            <label for="features-new">Новости</label>
+            <label for="features-news">Новости</label>
             <input id="features-gallery" type="checkbox" name="checkbox-features-galery">
             <label for="features-gallery">Галерея</label>
             <input id="features-cart" type="checkbox" name="checkbox-features-cart">
@@ -92,87 +92,93 @@
         </div>
         <div class="catalog-items">
           <article class="catalog-item">
-            <div class="catalog-item-browser">
+            <div class="catalog-item__browser">
+              <span class="catalog-item__dots"></span>
             </div>
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/240x240" alt="" />
-            </div>
-            <div class="catalog-item-description">
-              <h3 class="catalog-item-title">Aviator</h3>
-              <p>
-                Одностраничный макет с авторским дизайном
-              </p>
-              <a class="btn btn-price" href="#">8000 р.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="catalog-item-browser">
-            </div>
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/240x240" alt="" />
-            </div>
-            <div class="catalog-item-description">
-              <h3 class="catalog-item-title">Sunset</h3>
-              <p>
-                Интернет магазин с личным кабинетом
-              </p>
-              <a class="btn btn-price" href="#">10000 р.</a>
+            <div class="catalog-item__content">
+              <img src="img/catalog-aviator.jpg" alt="" />
+              <div class="catalog-item__description">
+                <h4 class="catalog-item__title">Aviator</h4>
+                <p>
+                  Одностраничный макет с авторским дизайном
+                </p>
+                <a class="btn btn-price" href="#">8000 р.</a>
+              </div>
             </div>
           </article>
           <article class="catalog-item">
-            <div class="catalog-item-browser">
+            <div class="catalog-item__browser">
+              <span class="catalog-item__dots"></span>
             </div>
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/240x240" alt="" />
+            <div class="catalog-item__content">
+              <img src="img/catalog-sunset.jpg" alt="" />
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">Sunset</h3>
+                <p>
+                  Интернет магазин с личным кабинетом
+                </p>
+                <a class="btn btn-price" href="#">10000 р.</a>
+              </div>
+          </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item__browser">
+              <span class="catalog-item__dots"></span>
             </div>
-            <div class="catalog-item-description">
-              <h3 class="catalog-item-title">Forte</h3>
-              <p>
-                Отличный макет для личного блога
-              </p>
-              <a class="btn btn-price" href="#">5000 р.</a>
+            <div class="catalog-item__content">
+              <img src="img/catalog-forte.jpg" alt="" />
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">Forte</h3>
+                <p>
+                  Отличный макет для личного блога
+                </p>
+                <a class="btn btn-price" href="#">5000 р.</a>
+            </div>
+          </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item__browser">
+              <span class="catalog-item__dots"></span>
+            </div>
+            <div class="catalog-item__content">
+              <img src="img/catalog-organic-tay.jpg" alt="" />
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">Modern Organic Thai</h3>
+                <p>
+                  Сайт для ресторана быстрого питания
+                </p>
+                <a class="btn btn-price" href="#">12000 р.</a>
+            </div>
+          </div>
+          </article>
+          <article class="catalog-item">
+            <div class="catalog-item__browser">
+              <span class="catalog-item__dots"></span>
+            </div>
+            <div class="catalog-item__content">
+              <img src="img/catalog-avenue.jpg" alt="" />
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">Avenue</h3>
+                <p>
+                  Макет для блога о путешествиях
+                </p>
+                <a class="btn btn-price" href="#">8000 р.</a>
+              </div>
             </div>
           </article>
           <article class="catalog-item">
-            <div class="catalog-item-browser">
+            <div class="catalog-item__browser">
+              <span class="catalog-item__dots"></span>
             </div>
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/240x240" alt="" />
-            </div>
-            <div class="catalog-item-description">
-              <h3 class="catalog-item-title">Modern Organic Thai</h3>
-              <p>
-                Сайт для ресторана быстрого питания
-              </p>
-              <a class="btn btn-price" href="#">12000 р.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="catalog-item-browser">
-            </div>
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/240x240" alt="" />
-            </div>
-            <div class="catalog-item-description">
-              <h3 class="catalog-item-title">Avenue</h3>
-              <p>
-                Макет для блога о путешествиях
-              </p>
-              <a class="btn btn-price" href="#">8000 р.</a>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="catalog-item-browser">
-            </div>
-            <div class="catalog-item-img">
-              <img src="http://placehold.it/240x240" alt="" />
-            </div>
-            <div class="catalog-item-description">
-              <h3 class="catalog-item-title">Dovetail</h3>
-              <p>
-                Интернет магазин с галереей товаров
-              </p>
-              <a class="btn btn-price" href="#">14000 р.</a>
+            <div class="catalog-item__content">
+              <img src="img/catalog-dovetail.jpg" alt="" />
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">Dovetail</h3>
+                <p>
+                  Интернет магазин с галереей товаров
+                </p>
+                <a class="btn btn-price" href="#">14000 р.</a>
+              </div>
             </div>
           </article>
         </div>
@@ -187,8 +193,16 @@
       </section>
     </main>
     <footer class="index-footer">
-      <div class="index-footer-map">
-
+      <div class="index-footer-map index-footer-map__catalog">
+        <div class="index-footer-map__contacts">
+          <span class="index-footer-map__contacts-title">NЁRDS DESIGN STUDIO</span>
+          <p class="index-footer-map__contacts-where">
+            191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <span class="index-footer-map__contacts-number">тел. +7 (812) 275-75-75</span>
+          <a class="btn btn-red btn-footer-contacts" href="#">Напишите нам</a>
+        </div>
       </div>
       <div class="index-footer-social container">
         <div class="social">
