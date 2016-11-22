@@ -12,12 +12,12 @@
       <div class="container">
         <nav class="clearfix">
           <div class="main-menu-logo">
-            <img src="img/top-menu-logo.png" alt="" />
+            <a href="index.html"><img src="img/top-menu-logo.png" alt="" /></a>
           </div>
           <ul class="main-navigation">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li class="menu-item-active"><a href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
           <div class="index-cart">
@@ -52,7 +52,7 @@
             <label for="grid-adaptive">Адаптивная</label>
             <input id="grid-fixed" type="radio" name="radio-grid">
             <label for="grid-fixed">Фиксированная</label>
-            <input id="grid-elastic" type="radio" name="radio-grid">
+            <input id="grid-elastic" type="radio" name="radio-grid" disabled>
             <label for="grid-elastic">Резиновая</label>
           </div>
           <div class="filter-sidebar">
@@ -65,10 +65,10 @@
             <label for="features-news">Новости</label>
             <input id="features-gallery" type="checkbox" name="checkbox-features-galery">
             <label for="features-gallery">Галерея</label>
-            <input id="features-cart" type="checkbox" name="checkbox-features-cart">
+            <input id="features-cart" type="checkbox" name="checkbox-features-cart" disabled>
             <label for="features-cart">Корзина</label>
           </div>
-          <input type="submit" name="name" value="Показать">
+          <input type="submit" name="sidebarFormSubmit" value="Показать">
         </form>
       </aside>
       <section class="catalog">
@@ -82,7 +82,7 @@
               <a class="link link-filter" href="#">По типу</a>
             </li>
             <li>
-              <a class="link link-filter" href="#">По функционалу</a>
+              <a class="link link-filter link-filter-active" href="#">По функционалу</a>
             </li>
           </ul>
           <div class="arrows">
@@ -98,7 +98,7 @@
             <div class="catalog-item__content">
               <img src="img/catalog-aviator.jpg" alt="" />
               <div class="catalog-item__description">
-                <h4 class="catalog-item__title">Aviator</h4>
+                <a class="catalog-item__title" href="#">Aviator</a>
                 <p>
                   Одностраничный макет с авторским дизайном
                 </p>
@@ -113,7 +113,7 @@
             <div class="catalog-item__content">
               <img src="img/catalog-sunset.jpg" alt="" />
               <div class="catalog-item__description">
-                <h3 class="catalog-item__title">Sunset</h3>
+                <a class="catalog-item__title" href="#">Sunset</a>
                 <p>
                   Интернет магазин с личным кабинетом
                 </p>
@@ -128,7 +128,7 @@
             <div class="catalog-item__content">
               <img src="img/catalog-forte.jpg" alt="" />
               <div class="catalog-item__description">
-                <h3 class="catalog-item__title">Forte</h3>
+                <a class="catalog-item__title" href="#">Forte</a>
                 <p>
                   Отличный макет для личного блога
                 </p>
@@ -143,7 +143,7 @@
             <div class="catalog-item__content">
               <img src="img/catalog-organic-tay.jpg" alt="" />
               <div class="catalog-item__description">
-                <h3 class="catalog-item__title">Modern Organic Thai</h3>
+                <a class="catalog-item__title" href="#">Modern Organic Thai</a>
                 <p>
                   Сайт для ресторана быстрого питания
                 </p>
@@ -158,7 +158,7 @@
             <div class="catalog-item__content">
               <img src="img/catalog-avenue.jpg" alt="" />
               <div class="catalog-item__description">
-                <h3 class="catalog-item__title">Avenue</h3>
+                <a class="catalog-item__title" href="#">Avenue</a>
                 <p>
                   Макет для блога о путешествиях
                 </p>
@@ -173,7 +173,7 @@
             <div class="catalog-item__content">
               <img src="img/catalog-dovetail.jpg" alt="" />
               <div class="catalog-item__description">
-                <h3 class="catalog-item__title">Dovetail</h3>
+                <a class="catalog-item__title" href="#">Dovetail</a>
                 <p>
                   Интернет магазин с галереей товаров
                 </p>
@@ -184,7 +184,7 @@
         </div>
         <div class="page-navigation">
           <ul class="list list-page-navigation">
-            <li><a class="link link-navigation" href="#">1</a></li>
+            <li><a class="link link-navigation link-navigation-active" href="#">1</a></li>
             <li><a class="link link-navigation" href="#">2</a></li>
             <li><a class="link link-navigation" href="#">3</a></li>
             <li><a class="link link-navigation link-navigation-last" href="#">Следующая</a></li>
