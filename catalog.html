@@ -72,7 +72,7 @@
         </form>
       </aside>
       <section class="catalog">
-        <div class="filter-items">
+        <div class="filter-items clearfix">
           <ul class="list list-filter-items">
             <li>Сортировать:</li>
             <li>
@@ -85,9 +85,9 @@
               <a class="link link-filter link-filter-active" href="#">По функционалу</a>
             </li>
           </ul>
-          <div class="arrows">
-            <a href="#"><span>1</span>1</a>
-            <a href="#"><span>2</span>2</a>
+          <div class="filter-items__arrows">
+            <a class="filter-items__arrows-icon filter-items__arrows-icon-down active" href="#"></a>
+            <a class="filter-items__arrows-icon filter-items__arrows-icon-up" href="#"></a>
           </div>
         </div>
         <div class="catalog-items">
@@ -203,6 +203,26 @@
           <span class="index-footer-map__contacts-number">тел. +7 (812) 275-75-75</span>
           <a class="btn btn-red btn-footer-contacts" href="#">Напишите нам</a>
         </div>
+        <div class="index-footer-map__contacts-form">
+            <div class="contacts-form__close">
+              <a class="btn-form__close" href="#"></a>
+            </div>
+            <form>
+              <div class="contacts-form__inputs clearfix">
+                <div class="contacts-form__inputs-name">
+                  <label for="MyNameIs">Ваше имя:</label>
+                  <input id="MyNameIs" type="text" name="writeUsName" placeholder="Представьтесь, пожалуйста">
+                </div>
+                <div class="contacts-form__inputs-email">
+                  <label for="MyMailIs">Ваш e-mail:</label>
+                  <input id="MyMailIs" type="text" name="writeUsEmail" placeholder="Для отправки ответа">
+                </div>
+                <label for="MyMessageIs">Тект письма:</label>
+                <textarea class="contacts-form__inputs__textarea" id="MyMessageIs" name="writeUsMessage" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+              </div>
+              <input class="btn contacts-form__inputs-submit" type="submit" name="writeUsSubmit" value="Отправить">
+            </form>
+        </div>
       </div>
       <div class="index-footer-social container">
         <div class="social">
@@ -218,4 +238,5 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
